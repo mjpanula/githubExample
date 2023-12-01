@@ -24,6 +24,7 @@ public class DefaultController {
         return "gifs";
     }
 
+
     @PostMapping("/gifs")
     public String create(@RequestParam("file") MultipartFile file) {
         System.out.println(file.getSize());
