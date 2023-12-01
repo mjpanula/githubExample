@@ -37,6 +37,7 @@ public class DefaultController {
         Files.copy(Paths.get("C:\\Users\\k5001199\\bananas.gif"), out);
     }
 
+
     @GetMapping(path = "/images/1", produces = "image/png")
     public String copyImage() {
         return "redirect:/img/bananas.gif";
